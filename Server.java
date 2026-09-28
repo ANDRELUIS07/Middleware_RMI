@@ -13,6 +13,7 @@ public class Server {
 
     public static void main(String[] args) {
         try {
+            System.setProperty("java.rmi.server.hostname", "192.168.0.15");
             // Cria o registry RMI nesta JVM, na porta padrão 1099
             Registry registry = LocateRegistry.createRegistry(REGISTRY_PORT);
 
