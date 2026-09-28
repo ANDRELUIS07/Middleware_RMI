@@ -15,7 +15,7 @@ public class RemoteMessageServiceImpl extends UnicastRemoteObject implements Rem
     private final AtomicInteger requestCounter = new AtomicInteger(0);
 
     protected RemoteMessageServiceImpl() throws RemoteException {
-        super();
+        super(1100);
     }
 
     @Override
